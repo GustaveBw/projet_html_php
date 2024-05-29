@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "awesome";
-  src: url(FontAwesome.otf);
+  src: url("fonts/fontawesome-webfont.ttf");
 }
 
 * {
@@ -109,7 +109,11 @@ nav ul li:hover {
 }
 
 nav ul li a {
-  color: aliceblue;
+  font-family: "Noto Sans Hanunoo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(67, 21, 39);
+  text-decoration: none;
 }
 nav hr {
   border: 2px solid rgb(108, 162, 224);
@@ -142,6 +146,10 @@ form {
 }
 
 /* fin formulaire */
+
+/* .bg_concrete{
+background-image:  src("../img/concrete-texture.png");
+} */
 
 /* footer */
 
@@ -178,7 +186,7 @@ footer {
 
 /*-------- MEDIAQUERIES ----------*/
 
-@media screen only (max-width: 960px) {
+/* @media screen only (max-width: 960px) {
 
 .full{
    width: 960px;
@@ -194,5 +202,4 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-}
-
+} */
