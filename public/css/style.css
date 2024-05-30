@@ -71,14 +71,22 @@ header .flex_header {
   justify-content: space-around;
 }
 
-h1 {
-  margin: auto;
+h1 {text-align: center;
+  margin: 25px;
 }
 .logos {
   width: 60px;
+  
 }
 .logos img {
+   
   width: 100%;
+}
+.logos img:hover{
+   filter: blur(5px); 
+  border: 1px solid white;
+
+  transition: 0.3s;
 }
 
 nav {
@@ -95,12 +103,10 @@ nav ul li {
   background-color: rgb(133, 133, 181);
   height: 25px;
   width: 75px;
-
   text-align: center;
   margin: auto;
   border-radius: 15px 0;
   border: 1px solid white;
-
   transition: 0.3s;
 }
 nav ul li:hover {
@@ -118,6 +124,20 @@ nav ul li a {
 nav hr {
   border: 2px solid rgb(108, 162, 224);
 }
+/* Main au sens large  */
+
+
+main{
+  width: 80%;
+  background-color: #32399a82;
+  margin: auto;
+  min-height: 620px;
+}
+
+
+
+
+
 
 /* Main Formulaire */
 
@@ -182,6 +202,29 @@ footer {
   left: 0;
   right: 0;
   color: rgb(255, 255, 255);
+}
+
+/* page position */
+
+.position_full {
+  margin: auto;
+  width: 60%;
+  background-color: rgba(181, 207, 207, 0.527);
+  min-height: auto;
+}
+.block_centre {
+  width: 450px;
+  height: 150px;
+  background-color: blueviolet;
+  margin: auto;
+}
+.block_absolue{
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  width: 150px;
+  height: 150px;
+  background-color: orange;
 }
 
 /*-------- MEDIAQUERIES ----------*/

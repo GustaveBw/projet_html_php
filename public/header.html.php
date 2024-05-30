@@ -26,8 +26,8 @@
 
                     <!-- <i class="fa-brands fa-square-facebook"></i>
                     <i class="fa-brands fa-instagram" style="color: #74C0FC;"></i> -->
-                    <img src="public/img/facebook.ico">
-                    <img src="public/img/instagram.svg">
+                    <a href="#"><img src="public/img/facebook.ico"></a>
+                    <a href="#"><img src="public/img/instagram.svg"></a>
                 </div>
             </div>
         </header>
