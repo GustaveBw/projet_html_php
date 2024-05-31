@@ -66,10 +66,23 @@ header {
   width: 100%;
   color: aqua;
 }
+
+
+/* header  */
+
+
 header .flex_header {
   display: flex;
   justify-content: space-around;
 }
+
+
+
+
+/* ending header */
+
+
+
 
 h1 {text-align: center;
   margin: 25px;
@@ -90,8 +103,8 @@ h1 {text-align: center;
 }
 
 nav {
-  background-color: aqua;
-  height: 25px;
+  background-color: rgba(136, 224, 224, 0.443);
+  height: 61px;
 }
 nav ul {
   width: 100%;
@@ -101,17 +114,17 @@ nav ul {
 }
 nav ul li {
   background-color: rgb(133, 133, 181);
-  height: 25px;
-  width: 75px;
+  height: 35px;
+  width: 100px;
   text-align: center;
-  margin: auto;
-  border-radius: 15px 0;
+  margin: 11px auto;
+  border-radius: 13px 0;
   border: 1px solid white;
   transition: 0.3s;
 }
 nav ul li:hover {
   background-color: #32399a;
-  color: white;
+ 
 }
 
 nav ul li a {
@@ -121,6 +134,15 @@ nav ul li a {
   color: rgb(67, 21, 39);
   text-decoration: none;
 }
+nav ul li a:hover{
+
+ color: white;
+transition: 0.3s;
+}
+
+
+
+
 nav hr {
   border: 2px solid rgb(108, 162, 224);
 }
@@ -229,20 +251,63 @@ footer {
 
 /*-------- MEDIAQUERIES ----------*/
 
-/* @media screen only (max-width: 960px) {
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .full{
+    width: 100%;
+  }
+.logos{
+  visibility: hidden;
 
-.full{
-   width: 960px;
+
+}
+.flex_header { 
+  height: 150px;
+  width: 100%;
+}
+header img{
+  width: 100;
 }
 
-
+h1 {
+    width: 25%;
+    text-align: center;
 }
+  nav ul {
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    width: 25%; /* Adjust the width as needed */
+    margin: 10px 0; /* Adjust the margin as needed */
+  }
+  nav {
+    height: auto; /* Adjust the height if necessary */
+  }
+
+  main {
+    width: 100%;
+    margin: auto;
+    
+}
+ footer {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    right : 0;
+}
+}
+/* fin test */
 
 
+/* @media screen only (max-width: 560px) {
+ .full main{
+width: 400px;
+margin
 
-@media screen only (max-width: 560px) {
-  header {
-    display: flex;
-    flex-wrap: wrap;
+ } 
+  nav ul{
+    background-color: black;
   }
 } */
