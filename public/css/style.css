@@ -150,7 +150,7 @@ nav hr {
 
 
 main{
-  width: 80%;
+  width: 70%;
   background-color: #32399a82;
   margin: auto;
   min-height: 620px;
@@ -219,14 +219,15 @@ footer {
     rgba(9, 21, 46, 1) 29%,
     rgba(20, 177, 157, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#14b19d",GradientType=1);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#14b19d",GradientType=1);
   bottom: 0;
   left: 0;
   right: 0;
   color: rgb(255, 255, 255);
+position: sticky; */
 }
 
-/* page position */
+/* POSITION */
 
 .position_full {
   margin: auto;
@@ -248,6 +249,230 @@ footer {
   height: 150px;
   background-color: orange;
 }
+
+.carre_relative{
+ background-color: #32399a;
+ width:  200px;
+ height: 200px;
+ margin: auto;
+}
+.petit_carre_relative{
+  position: relative;
+  background-color: antiquewhite;
+  width: 50px;
+  height: 50px;
+}
+
+/* Pourcentage */
+
+.bloc_percent div{
+  color: aliceblue;
+  height: 25px;
+  margin: 25px 12px;
+  background-color: aquamarine;
+}
+.bloc_percent>.premier_percent{
+  width: 30%;
+  background-color: #32399a;
+}
+
+.bloc_percent>.deuxieme_percent{
+    width: 50%;
+  background-color: #b12ea4;
+}
+
+.bloc_percent>.troisieme_percent{
+    width: 100%;
+  background-color: #b12e4a;
+}
+
+/* Flexbox */
+
+.flex1{
+  display: flex;
+  justify-content: space-between;
+}
+.flex2{
+  display: flex;
+  justify-content: space-around;
+}
+.flex3{
+  display: flex;
+  justify-content: space-evenly;
+}
+.flex1 div{
+background-color: beige;
+height: 100px;
+width: 100px;
+}
+.flex2 div{
+background-color: beige;
+height: 100px;
+width: 100px;
+}
+.flex3 div{
+background-color: beige;
+height: 100px;
+width: 100px;
+}
+
+
+/* FIN POSITION */
+
+
+
+
+
+/* TEXTE */
+.texte_full{
+  
+  margin: 0 25px;
+}
+
+/* FIN TEXTE */
+
+
+/* ----------------------------------------------*/
+
+
+/* SELECTEUR */
+
+
+/* FIN SELECTEUR */
+
+
+/* ----------------------------------------------*/
+
+
+/* IMAGE */
+
+.bg_image{
+  background-image: url(../img/background/fond.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 651px;
+  /* margin: auto; */
+}
+.bg_image div{
+
+ background-color: rgba(240, 248, 255, 0.641);
+}
+
+.effet2{
+  /* background-color: black;
+  height: 200px; */
+}
+
+
+/* FIN IMAGE */
+
+
+
+/* ZONING */
+.premiere_section{
+  border: #b12e4a solid 1px;
+  display: flex;
+  height: 200px;
+  width: 100%;
+}
+.h1 { 
+  border: #b12e4a solid 1px;
+  background-color: antiquewhite;
+  width: 25%;
+}
+.h3{ 
+  border: #b12e4a solid 1px;
+  background-color: antiquewhite;
+  width: 25%;
+}
+.h2{
+   border: #b12e4a solid 1px;
+  background-color: rgb(189, 72, 200);
+
+  width: 75%;
+}
+
+.menu {
+  background-color: aquamarine;
+  height: 25px;
+}
+
+
+.zones{
+  display: flex;
+}
+.zone_gauche{
+  width: 25%;
+  background-color: #1746d5;
+  height: 100%;
+}
+.zone_droite{
+  width: 100%;
+  background-color: rgb(25, 81, 81);
+}
+.zone_droite>.alt1{
+  height: 200px;
+  width: 50%;
+  background-color: #b12ea4 ;
+}
+ .alt2{
+  display: flex;
+ }
+ .alt2 div{
+  height: 200px;
+  width: 200px;
+
+ }
+.alt2 div:nth-child(odd){
+ 
+  border: #b12e4a solid 1px;
+  /* height: 75px;
+  width: 75px;*/
+}
+.alt2 div:nth-child(even){
+ 
+  border: #2eb142 solid 1px;
+  /* height: 75px;
+  width: 75px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bas{
+   background-color: aquamarine;
+  height: 35px;
+}
+
+/* FIN ZONING */
+
+
+/* TABLE */
+
+table{
+  width: 75%;
+  margin: auto;
+}
+table, th, td, tr {
+  
+  border:1px solid black;
+}
+
+/* FIN TABLE */
+
+
+
+
+
+
 
 /*-------- MEDIAQUERIES ----------*/
 
@@ -289,6 +514,7 @@ h1 {
   main {
     width: 100%;
     margin: auto;
+    min-height: 100%;
     
 }
  footer {
